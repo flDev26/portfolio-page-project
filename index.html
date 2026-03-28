@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Project</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Flavio Palacios</h1>
+            <nav class="header__nav">
+                <ul class="header__navList">
+                    <!--"tabindex" allows pre-selection of elements via the tab key.-->
+                    <li class="header__navItem">
+                        <a href="#home" class="header__navLink" tabindex="0">Home</a>
+                    </li>
+                    <li class="header__navItem">
+                        <a href="#portfolio" class="header__navLink" tabindex="0">Portfolio</a>
+                    </li>
+                    <li class="header__navItem header__navItem--contact">
+                        <a href="#contact" class="header__navLink" role="button" tabindex="0">Contact</a>
+                    </li>
+                    <li class="header__navItem header__navItem--github">
+                        <a href="https://github.com/flDev26" target="_blank" class="header__navLink" tabindex="0">
+                            <i class="fab fa-github"></i> <!--Icon from cdnjs header.-->
+                        </a>
+                    </li>
+                    <li class="header__navItem header__navItem--bitbucket">
+                        <a href="https://bitbucket.org/FlavioCPT/workspace/projects/" target="_blank" class="header__navLink" tabindex="0">
+                            <i class="fab fa-bitbucket"></i> <!--Icon from cdnjs header.-->
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h1 class="intro__title">Hi my name is Flavio Palacios ☕💻📝</h1>
+            <h2 class="intro__subtitle">I am a Front End Developer that believes great designs are possible when details are brought to life. I enjoy building interfaces that feel as good as they look. Take a peek at what I've been working on:</h2>
+        </div>
+    </section>
+
+    <section id="portfolio" class="gallery">
+        <div class="container">
+            <div class="gallery__grid">
+                <div class="gallery__item">
+                    <!--Note:It's possible to have "label" refrences for an "id" before and after the actual declaration of said "id".-->
+                    <label for="modal1">
+                        <span class="gallery__smallModalImg" style="background-image:url('images/apple-mbp.png');"></span> <!--Small size.-->
+                    </label>
+                    <input type="checkbox" id="modal1" class="gallery__modalCheckboxBtn"> <!--Boolean. To know image is clicked without Javascript.-->
+                    <div class="gallery__modal">
+                        <label for="modal1" class="gallery__modalCloseBtn">&times;</label> <!--Connected to checkbox button.-->
+                        <img src="images/apple-mbp.png" alt="Apple MacBook Pro Website" class="gallery__modalImg"> <!--Normal size.-->
+                    </div>
+                    <div class="gallery__itemInfo">
+                        <span class="gallery_itemTitle">MacBook Pro</span>
+                        <a href="https://apple-mbp.vercel.app" target="blank" class="gallery_itemLink">
+                            <i class="fas fa-external-link-alt"></i>  <!--Icon from cdnjs header.-->
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <label for="modal2">
+                        <span class="gallery__smallModalImg" style="background-image:url('images/calculator.png');"></span> 
+                    </label>
+                    <input type="checkbox" id="modal2" class="gallery__modalCheckboxBtn"> 
+                    <div class="gallery__modal">
+                        <label for="modal2" class="gallery__modalCloseBtn">&times;</label> 
+                        <img src="images/calculator.png" alt="Calculator HTML & CSS Only" class="gallery__modalImg">
+                    </div>
+                    <div class="gallery__itemInfo">
+                        <span class="gallery_itemTitle">Calculator</span>
+                        <a href="https://codepen.io/gambhirsharma/pen/ExwBKop" target="blank" class="gallery_itemLink">
+                            <i class="fas fa-external-link-alt"></i> 
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <label for="modal3">
+                        <span class="gallery__smallModalImg" style="background-image:url('images/codeswitcher.png');"></span> 
+                    </label>
+                    <input type="checkbox" id="modal3" class="gallery__modalCheckboxBtn"> 
+                    <div class="gallery__modal">
+                        <label for="modal3" class="gallery__modalCloseBtn">&times;</label> 
+                        <img src="images/codeswitcher.png" alt="Code Switcher Website" class="gallery__modalImg">
+                    </div>
+                    <div class="gallery__itemInfo">
+                        <span class="gallery_itemTitle">Code Switcher</span>
+                        <a href="https://codeswitcher.vercel.app" target="blank" class="gallery_itemLink">
+                            <i class="fas fa-external-link-alt"></i> 
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <label for="modal4">
+                        <span class="gallery__smallModalImg" style="background-image:url('images/computer-diorama.png');"></span> 
+                    </label>
+                    <input type="checkbox" id="modal4" class="gallery__modalCheckboxBtn"> 
+                    <div class="gallery__modal">
+                        <label for="modal4" class="gallery__modalCloseBtn">&times;</label> 
+                        <img src="images/computer-diorama.png" alt="Computer Diorama" class="gallery__modalImg">
+                    </div>
+                    <div class="gallery__itemInfo">
+                        <span class="gallery_itemTitle">Computer Diorama</span>
+                        <a href="https://codepen.io/ricardoolivaalonso/pen/poYEpwP" target="blank" class="gallery_itemLink">
+                            <i class="fas fa-external-link-alt"></i> 
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <label for="modal5">
+                        <span class="gallery__smallModalImg" style="background-image:url('images/DoomScroll.png');"></span> 
+                    </label>
+                    <input type="checkbox" id="modal5" class="gallery__modalCheckboxBtn"> 
+                    <div class="gallery__modal">
+                        <label for="modal5" class="gallery__modalCloseBtn">&times;</label> 
+                        <img src="images/DoomScroll.png" alt="Doom Scroll" class="gallery__modalImg">
+                    </div>
+                    <div class="gallery__itemInfo">
+                        <span class="gallery_itemTitle">Doom Scroll</span>
+                        <a href="https://codepen.io/cobra_winfrey/pen/oNOMRav" target="blank" class="gallery_itemLink">
+                            <i class="fas fa-external-link-alt"></i> 
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__item">
+                    <label for="modal6">
+                        <span class="gallery__smallModalImg" style="background-image:url('images/glass-gradient-card.png');"></span> 
+                    </label>
+                    <input type="checkbox" id="modal6" class="gallery__modalCheckboxBtn"> 
+                    <div class="gallery__modal">
+                        <label for="modal6" class="gallery__modalCloseBtn">&times;</label> 
+                        <img src="images/glass-gradient-card.png" alt="Glass Gradient Card" class="gallery__modalImg">
+                    </div>
+                    <div class="gallery__itemInfo">
+                        <span class="gallery_itemTitle">Glass Gradient Card</span>
+                        <a href="https://codepen.io/Podgro/pen/oNOKYqr" target="blank" class="gallery_itemLink">
+                            <i class="fas fa-external-link-alt"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="contact__title">Contact Me</h2>
+            <p class="contact__description">Feel free to reach out to me via email pmtjuliusc@gmail.com</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2025 Flavio Palacios. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
