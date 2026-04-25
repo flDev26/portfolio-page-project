@@ -153,6 +153,8 @@ body{
 .gallery__item{
     position:relative;
     min-height:300px;
+    border:1px solid black;
+    border-radius: 2%;
 }
 .gallery__smallModalImg{
     display:inline-block;
@@ -215,6 +217,54 @@ body{
 /*"+" makes both classes work together even if unrelated.*/
 .gallery__modalCheckboxBtn:checked+.gallery__modal{
     display:flex;
+}
+
+/* Container for project details beneath the link. */
+.gallery__itemDetails {
+    padding: 0 10px 15px 10px; /* Adjust based on your gallery spacing */
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    min-height: 180px;
+}
+
+.gallery__description {
+    font-size: 0.85rem;
+    color: #888; /* Muted color so it doesn't fight with the title */
+    margin: 8px 0;
+    line-height: 1.4;
+    margin-bottom: auto;
+}
+
+.gallery__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.gallery__techStack {
+    
+    display:flex;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* GitHub Link Styling */
+.gallery__github a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #fff;
+    background: #333; /* Dark button look */
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.gallery__github a:hover {
+    background: #555;
 }
 
 /*CONTACT*/
